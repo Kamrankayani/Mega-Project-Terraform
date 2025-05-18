@@ -1,3 +1,4 @@
+
 provider "aws" {
   region = "us-east-1"
 }
@@ -87,7 +88,7 @@ resource "aws_security_group" "devopsshack_node_sg" {
 }
 
 resource "aws_eks_cluster" "devopsshack" {
-  name     = "devopsshack-cluster"
+  name     = "devopsshack-cluster-1"
   role_arn = aws_iam_role.devopsshack_cluster_role.arn
 
   vpc_config {
