@@ -2,10 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-variable "ssh_key_name" {
-  description = "Name of an existing EC2 KeyPair to enable SSH access"
-  type        = string
-}
+
 
 resource "aws_vpc" "devopsshack_vpc" {
   cidr_block = "10.0.0.0/16"
